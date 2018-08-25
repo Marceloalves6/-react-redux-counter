@@ -17,11 +17,12 @@ class App extends Component {
     );
   }
 }
-
+/*It glues redux store state with react component property*/
 function mapStateToProps(state) {
   return { count: state.count }
 }
 
+/*It glues reducer with react component property*/
 function mapActonToProps(dispatch) {
   return {
     increase: bindActionCreators(increase, dispatch),
